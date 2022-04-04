@@ -1,0 +1,91 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Aborting jack-in. No project type selected.
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉getting-clojure.core꞉> 
+Hello, world!
+nil
+clj꞉getting-clojure.core꞉> 
+"Clojure"
+clj꞉getting-clojure.core꞉> 
+"Hello, world!"
+clj꞉getting-clojure.core꞉> 
+"3 2 1 Blast off!"
+clj꞉getting-clojure.core꞉> 
+12
+clj꞉getting-clojure.core꞉> 
+5
+clj꞉getting-clojure.core꞉> 
+0
+clj꞉getting-clojure.core꞉> 
+true
+nil
+clj꞉getting-clojure.core꞉> 
+false
+nil
+clj꞉getting-clojure.core꞉> 
+Nobody's home: nil
+nil
+clj꞉getting-clojure.core꞉> 
+We can print many things: true false nil
+nil
+clj꞉getting-clojure.core꞉> 
+1984
+clj꞉getting-clojure.core꞉> 
+1984
+clj꞉getting-clojure.core꞉> 
+1984
+clj꞉getting-clojure.core꞉> 
+1997
+clj꞉getting-clojure.core꞉> 
+1984
+clj꞉getting-clojure.core꞉> 
+1997.0
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/first-name
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/the-average
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/hello-world
+clj꞉getting-clojure.core꞉> 
+Hello, world!
+nil
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/hellor-world
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/say-welcome
+clj꞉getting-clojure.core꞉> 
+Welcome to Clojure
+nil
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/average
+clj꞉getting-clojure.core꞉> 
+7.5
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/chatty-average
+clj꞉getting-clojure.core꞉> 
+chatty-aberage calle
+** first argument: 10
+** second argument: 20
+15.0
+clj꞉getting-clojure.core꞉> 
+; Execution error (ArithmeticException) at getting-clojure.core/eval7766 (form-init989813348474444579.clj:63).
+; Divide by zero
+clj꞉getting-clojure.core꞉> 
