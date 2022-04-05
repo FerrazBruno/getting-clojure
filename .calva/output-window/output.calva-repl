@@ -5,12 +5,10 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Aborting jack-in. No project type selected.
-; Jacking in...
 ; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
-; TIPS: 
+; TIPS:
 ;   - You can edit the contents here. Use it as a REPL if you like.
 ;   - `alt+enter` evaluates the current top level form.
 ;   - `ctrl+enter` evaluates the current form.
@@ -20,72 +18,88 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-Hello, world!
-nil
+[true 3 "four" 5]
 clj꞉getting-clojure.core꞉> 
-"Clojure"
+[1 [true 3 "four" 5] 6]
 clj꞉getting-clojure.core꞉> 
-"Hello, world!"
+[0 [1 [true 3 "four" 5] 6] 7]
 clj꞉getting-clojure.core꞉> 
-"3 2 1 Blast off!"
+[true 3 "four" 5]
 clj꞉getting-clojure.core꞉> 
-12
+[]
 clj꞉getting-clojure.core꞉> 
-5
+#'getting-clojure.core/novels
 clj꞉getting-clojure.core꞉> 
-0
+3
 clj꞉getting-clojure.core꞉> 
-true
-nil
+"Emma"
 clj꞉getting-clojure.core꞉> 
-false
-nil
+("Coma" "War and Peace")
 clj꞉getting-clojure.core꞉> 
-Nobody's home: nil
-nil
+("War and Peace")
 clj꞉getting-clojure.core꞉> 
-We can print many things: true false nil
-nil
+()
 clj꞉getting-clojure.core꞉> 
-1984
+()
 clj꞉getting-clojure.core꞉> 
-1984
+#'getting-clojure.core/year-book
 clj꞉getting-clojure.core꞉> 
-1984
+; Syntax error compiling at (core.clj:88:30).
+; Unable to resolve symbol: resst in this context
 clj꞉getting-clojure.core꞉> 
-1997
+#'getting-clojure.core/third-book
 clj꞉getting-clojure.core꞉> 
-1984
+"1984"
 clj꞉getting-clojure.core꞉> 
-1997.0
+"1984"
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/first-name
+"1984"
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/the-average
+["Emma" "Coma" "War and Peace" "Carrie"]
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/hello-world
+(["Emma" "Coma" "War and Peace"] \C \a \r \r \i \e)
 clj꞉getting-clojure.core꞉> 
-Hello, world!
-nil
+("Carrie" "Emma" "Coma" "War and Peace")
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/hellor-world
+(1 2 3)
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/say-welcome
+()
 clj꞉getting-clojure.core꞉> 
-Welcome to Clojure
-nil
+(1 2 3 "four" 5 "six")
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/average
+(1 2.0 2.999 "four" 5.001 "six")
 clj꞉getting-clojure.core꞉> 
-7.5
+([1 2 ("a" "list" "inside a" "vector")] "inside" "a" "list")
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/chatty-average
+(1 2 3 "four" 5)
 clj꞉getting-clojure.core꞉> 
-chatty-aberage calle
-** first argument: 10
-** second argument: 20
-15.0
+(1 2 3 "four" 5 "six")
 clj꞉getting-clojure.core꞉> 
-; Execution error (ArithmeticException) at getting-clojure.core/eval7766 (form-init989813348474444579.clj:63).
-; Divide by zero
+#'getting-clojure.core/poems
+clj꞉getting-clojure.core꞉> 
+3
+clj꞉getting-clojure.core꞉> 
+"Iliad"
+clj꞉getting-clojure.core꞉> 
+("Odyssey" "Now We Are Six")
+clj꞉getting-clojure.core꞉> 
+"Now We Are Six"
+clj꞉getting-clojure.core꞉> 
+("Jabberwocky" "Iliad" "Odyssey" "Now We Are Six")
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/vector-poems
+clj꞉getting-clojure.core꞉> 
+["Iliad" "Odyssey" "Now We Are Six" "Jabberwocky"]
+clj꞉getting-clojure.core꞉> 
+("Jabberwocky" "Iliad" "Odyssey" "Now We Are Six")
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/novels
+clj꞉getting-clojure.core꞉> 
+["Emma" "Coma" "War and Peace" "Jaws"]
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/more-novels
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/novels
+clj꞉getting-clojure.core꞉> 
+("Jaws" "Emma" "Coma" "War and Peace")
 clj꞉getting-clojure.core꞉> 
