@@ -63,6 +63,9 @@
 ;; (/ 100 0) Execution error (ArithmeticException)
 ;; (+ (* 2 2) 10)) RuntimeException Unmatched delimiter: )
 
+;; In the Wild
+;; Wrapping Up
+
 
 ;; CHAPTER 2
 ;; Vectors and Lists
@@ -120,6 +123,93 @@ third-book
 (conj novels "Jaws")
 
 ;; In the Wild
+;; Wrapping Up
 
+
+;; CHAPTER 3
+;; Maps, Keywords, and Sets
+;; This Goes with That
+
+{"title" "Oliver Twist" "author" "Dickens" "published" 1838}
+(hash-map "title"     "Oliver Twist"
+          "author"    "Dickens"
+          "published" 1838)
+(def book {"title"     "Oliver Twist"
+           "author"    "Dickens"
+           "published" 1838})
+(get book "published")
+(book "published")
+(book "title")
+(book "author")
+(book "copyright")
+
+;; Keywords
+:title
+:author
+:published
+:world-count
+:preface&introduction
+:chapter-1-and-2
+(def book {:title     "Oliver Twist"
+           :author    "Dickens"
+           :published 1838})
+(println "Title:"     (book :title))
+(println "By:"        (book :author))
+(println "Published:" (book :published))
+(:title book)
+
+;; Changing Your Map Without Changing It
+(assoc book :page-count 362)
+(assoc book :page-count 362 :title "War & Peace")
+(dissoc book :published)
+(dissoc book :title :author :published)
+(dissoc book :paperback :illustrator :favorite-zoo-animal)
+(assoc [:title :by :published] 1 :author)
+(assoc [:title :by :published] 2 :page-count)
+
+;; Other Hand Map Functions
+(keys book)
+(sorted-map :title     "Oliver Twist"
+            :author    "Dickens"
+            :published 1838)
+(vals book)
+{:title "Oliver Twist", :author "Dickens", :published 1838}
+
+;; Sets
+(def genres #{:sci-fi :romance :mystery})
+(def authors #{"Dickens" "Austen" "King"})
+;; #{"Dickens" "Austen" "Dickens"}
+(contains? genres "Dickens")
+(contains? authors "Dickens")
+(authors "Austen")
+(genres :historical)
+(:sci-fi genres)
+(:historical genres)
+(def more-authors (conj authors "Clarke"))
+(conj more-authors "Clarke")
+(disj more-authors "King")
+
+;; In The Wild
+;; Staying Out Of Trouble
+(book "Title")
+(assoc book "Title" "Pride and Prejudice")
+(book :some-key-that-is-clearly-not-here)
+(def anonymous-book {:title "The Arabian Nights" :author nil})
+(contains? anonymous-book :title)
+(contains? anonymous-book :author)
+(contains? anonymous-book :favorite-color)
+(def possible-authors #{"Austen" "Dickens" nil})
+(contains? possible-authors "Austen")
+(contains? possible-authors "King")
+(contains? possible-authors nil)
+(first book)
+(second book)
+(count book)
+
+;; Wrapping Up
+
+
+;; CHAPTER 4
+;; Logic
 
 

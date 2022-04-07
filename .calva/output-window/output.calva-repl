@@ -18,88 +18,130 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-[true 3 "four" 5]
+{"title" "Oliver Twist", "author" "Dickens", "published" 1838}
 clj꞉getting-clojure.core꞉> 
-[1 [true 3 "four" 5] 6]
+{"author" "Dickens", "published" 1838, "title" "Oliver Twist"}
 clj꞉getting-clojure.core꞉> 
-[0 [1 [true 3 "four" 5] 6] 7]
+#'getting-clojure.core/book
 clj꞉getting-clojure.core꞉> 
-[true 3 "four" 5]
+1838
 clj꞉getting-clojure.core꞉> 
-[]
+1838
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/novels
+"Oliver Twist"
+clj꞉getting-clojure.core꞉> 
+"Dickens"
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+:title
+clj꞉getting-clojure.core꞉> 
+:author
+clj꞉getting-clojure.core꞉> 
+:published
+clj꞉getting-clojure.core꞉> 
+:preface&introduction
+clj꞉getting-clojure.core꞉> 
+:chapter-1-and-2
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/book
+clj꞉getting-clojure.core꞉> 
+Title: Oliver Twist
+nil
+clj꞉getting-clojure.core꞉> 
+Title: Oliver Twist
+nil
+clj꞉getting-clojure.core꞉> 
+By: Dickens
+nil
+clj꞉getting-clojure.core꞉> 
+Published: 1838
+nil
+clj꞉getting-clojure.core꞉> 
+"Oliver Twist"
+clj꞉getting-clojure.core꞉> 
+{:title "Oliver Twist", :author "Dickens", :published 1838, :page-count 362}
+clj꞉getting-clojure.core꞉> 
+{:title "War & Peace", :author "Dickens", :published 1838, :page-count 362}
+clj꞉getting-clojure.core꞉> 
+{:title "Oliver Twist", :author "Dickens"}
+clj꞉getting-clojure.core꞉> 
+{}
+clj꞉getting-clojure.core꞉> 
+{:title "Oliver Twist", :author "Dickens", :published 1838}
+clj꞉getting-clojure.core꞉> 
+[:title :author :published]
+clj꞉getting-clojure.core꞉> 
+[:title :by :published :page-count]
+clj꞉getting-clojure.core꞉> 
+[:title :by :page-count]
+clj꞉getting-clojure.core꞉> 
+(:title :author :published)
+clj꞉getting-clojure.core꞉> 
+{:author "Dickens", :published 1838, :title "Oliver Twist"}
+clj꞉getting-clojure.core꞉> 
+("Oliver Twist" "Dickens" 1838)
+clj꞉getting-clojure.core꞉> 
+{:title "Oliver Twist", :author "Dickens", :published 1838}
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/genres
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/authors
+clj꞉getting-clojure.core꞉> 
+; Syntax error reading source at (REPL:181:32).
+; Duplicate key: Dickens
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+"Austen"
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+:sci-fi
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/more-authors
+clj꞉getting-clojure.core꞉> 
+#{"King" "Dickens" "Clarke" "Austen"}
+clj꞉getting-clojure.core꞉> 
+#{"Dickens" "Clarke" "Austen"}
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+{:title "Oliver Twist", :author "Dickens", :published 1838, "Title" "Pride and Prejudice"}
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/anonymous-book
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/possible-authors
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+[:title "Oliver Twist"]
+clj꞉getting-clojure.core꞉> 
+[:author "Dickens"]
 clj꞉getting-clojure.core꞉> 
 3
-clj꞉getting-clojure.core꞉> 
-"Emma"
-clj꞉getting-clojure.core꞉> 
-("Coma" "War and Peace")
-clj꞉getting-clojure.core꞉> 
-("War and Peace")
-clj꞉getting-clojure.core꞉> 
-()
-clj꞉getting-clojure.core꞉> 
-()
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/year-book
-clj꞉getting-clojure.core꞉> 
-; Syntax error compiling at (core.clj:88:30).
-; Unable to resolve symbol: resst in this context
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/third-book
-clj꞉getting-clojure.core꞉> 
-"1984"
-clj꞉getting-clojure.core꞉> 
-"1984"
-clj꞉getting-clojure.core꞉> 
-"1984"
-clj꞉getting-clojure.core꞉> 
-["Emma" "Coma" "War and Peace" "Carrie"]
-clj꞉getting-clojure.core꞉> 
-(["Emma" "Coma" "War and Peace"] \C \a \r \r \i \e)
-clj꞉getting-clojure.core꞉> 
-("Carrie" "Emma" "Coma" "War and Peace")
-clj꞉getting-clojure.core꞉> 
-(1 2 3)
-clj꞉getting-clojure.core꞉> 
-()
-clj꞉getting-clojure.core꞉> 
-(1 2 3 "four" 5 "six")
-clj꞉getting-clojure.core꞉> 
-(1 2.0 2.999 "four" 5.001 "six")
-clj꞉getting-clojure.core꞉> 
-([1 2 ("a" "list" "inside a" "vector")] "inside" "a" "list")
-clj꞉getting-clojure.core꞉> 
-(1 2 3 "four" 5)
-clj꞉getting-clojure.core꞉> 
-(1 2 3 "four" 5 "six")
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/poems
-clj꞉getting-clojure.core꞉> 
-3
-clj꞉getting-clojure.core꞉> 
-"Iliad"
-clj꞉getting-clojure.core꞉> 
-("Odyssey" "Now We Are Six")
-clj꞉getting-clojure.core꞉> 
-"Now We Are Six"
-clj꞉getting-clojure.core꞉> 
-("Jabberwocky" "Iliad" "Odyssey" "Now We Are Six")
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/vector-poems
-clj꞉getting-clojure.core꞉> 
-["Iliad" "Odyssey" "Now We Are Six" "Jabberwocky"]
-clj꞉getting-clojure.core꞉> 
-("Jabberwocky" "Iliad" "Odyssey" "Now We Are Six")
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/novels
-clj꞉getting-clojure.core꞉> 
-["Emma" "Coma" "War and Peace" "Jaws"]
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/more-novels
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/novels
-clj꞉getting-clojure.core꞉> 
-("Jaws" "Emma" "Coma" "War and Peace")
 clj꞉getting-clojure.core꞉> 
