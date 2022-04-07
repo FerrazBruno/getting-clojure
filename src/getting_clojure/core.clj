@@ -212,4 +212,150 @@ third-book
 ;; CHAPTER 4
 ;; Logic
 
+;; The Fundamental If
+(defn print-greeting [preferred-customer]
+  (if preferred-customer
+    (println "Welcome back to Blotts Books!")
+    (println "Welcome to Botts Books!")))
+(print-greeting true)
+(print-greeting false)
+(defn shipping-charge [preferred-customer order-amount]
+  (if preferred-customer
+    0.00
+    (* order-amount 0.10)))
+(shipping-charge false 100)
 
+;; Asking Question
+(= 1 1)
+(= 2 (+ 1 1))
+(= "Anna Karenina" "Jane Eyre")
+(= "Emma" "Emma")
+(= (+ 2 2) 4 (/ 40 10) (* 2 2) (- 5 1))
+(= 2 2 2 2 3 2 2 2 2 2)
+(not= "Anna Karenina" "Jane Eyre")
+(not= "Anna Karenina" "Anna Karenina")
+(if (> 3 1)
+  (println "3 is bigger than 1"))
+(if (< 1 3)
+  (println "1 is smaller than 3"))
+(number? 1984)
+(number? "Anna Karenina")
+(string? "Anna Karenina")
+(keyword? "Anna Karenina")
+(map? :anna-karenina)
+(map? {:title 1984})
+(vector? 1984)
+(vector? [1984])
+(defn shipping-surcharge? [preferred-customer express oversized]
+  (and (not preferred-customer) (or express oversized)))
+
+;; Truthy and Falsy
+(if 1
+  "I like science fiction!"
+  "I like mysteries!")
+(if "hello"
+  "I like science fiction!"
+  "I like mysteries!")
+(if [1 2 3]
+  "I like science fiction!"
+  "I like mysteries!")
+(if false
+  "I like scifi!"
+  "I like mysteries!")
+(if 0 "yes" "no")
+(if 1 "yes" "no")
+(if 1.0 "yes" "no")
+(if :russ "yes" "no")
+(if "Russ" "yes" "no")
+(if "true" "yes" "no")
+(if "false" "yes" "no")
+(if "nil" "yes" "no")
+(if []
+  (println "An empty vector is true!"))
+(if [1 2 3]
+  (println "So is a populated vector!"))
+(if {}
+  (println "An empty map is true!"))
+(if {:title "Make Room! Make Room!"}
+  (println "So is a full map!"))
+(if () 
+  (println "An empty list is true!"))
+(if '(:full :list)
+  (println "So is a full list!"))
+
+;; Do and When
+(do
+  (println "This is four expression.")
+  (println "All grouped together as one")
+  (println "That prints some stuff and then evaluates to 44")
+  44)
+(defn shipping-charge [preferred-customer order-amount]
+  (if preferred-customer
+    (do
+      (println "Preferred customer, free shipping!")
+      0.0)
+    (do
+      (println "Regular customer, charge them for shipping.")
+      (* order-amount 0.10))))
+(when true
+  (println "Hello returning customer!")
+  (println "Welcome back to Blotts Books!"))
+
+;; Dealing with Multiple Conditions
+(defn shipping-charge [preferred-customer order-amount]
+  (if preferred-customer
+    0.0
+    (if (< order-amount 50.0)
+      5.0
+      (if (< order-amount 100.0)
+        10.0
+        (* 0.1 order-amount)))))
+(defn shipping-charge [preferred-customer order-amount]
+  (cond
+    preferred-customer 0.0
+    (< order-amount 50.0) 5.0
+    (< order-amount 100.0) 10.0))
+(defn shipping-charge [preferred-customer order-amount]
+  (cond
+    preferred-customer 0.0
+    (< order-amount 50.0) 5.0
+    (< order-amount 100.0) 10.0
+    (>= order-amount 1000.) (* 0.1 order-amount)))
+(defn shipping-charge [preferred-customer order-amount]
+  (cond
+    preferred-customer 0.0
+    (< order-amount 50.0) 5.0
+    (< order-amount 100.0) 10.0
+    :else (* 0.1 order-amount)))
+(defn customer-greeting [status]
+  (case status
+    :gold      "Welcome, welcome, welcome back!!!"
+    :preferred "Welcome back!"
+               "Welcome to Blotts Books"))
+(customer-greeting :gold)
+(customer-greeting :preferred)
+(customer-greeting :another-thing)
+
+;; Throwing and Catching
+;; (try
+;;   (publish-book book)
+;;   (catch ArithmeticException e (println "Math Problem"))
+;;   (catch StackOverflowError e (println "Unable to publish...")))
+(defn publish-book [book]
+  (when (not (:title book))
+    (throw
+      (ex-info "A book needs a title!" {:book book}))))
+
+;; In the Wild
+;; Staying Out of Trouble
+(and true 1984)
+(and 2001 "Emma")
+(and 2001 nil "Emma")
+(if (= (number? 20) true)
+  "ok")
+
+;; Wrapping Up
+
+
+;; CHAPTER 5
+;; More Capable Functions

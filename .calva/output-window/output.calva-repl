@@ -18,112 +18,26 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-{"title" "Oliver Twist", "author" "Dickens", "published" 1838}
+#'getting-clojure.core/print-greeting
 clj꞉getting-clojure.core꞉> 
-{"author" "Dickens", "published" 1838, "title" "Oliver Twist"}
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/book
-clj꞉getting-clojure.core꞉> 
-1838
-clj꞉getting-clojure.core꞉> 
-1838
-clj꞉getting-clojure.core꞉> 
-"Oliver Twist"
-clj꞉getting-clojure.core꞉> 
-"Dickens"
-clj꞉getting-clojure.core꞉> 
+Welcome back to Blotts Books!
 nil
 clj꞉getting-clojure.core꞉> 
-:title
+#'getting-clojure.core/print-greeting
 clj꞉getting-clojure.core꞉> 
-:author
-clj꞉getting-clojure.core꞉> 
-:published
-clj꞉getting-clojure.core꞉> 
-:preface&introduction
-clj꞉getting-clojure.core꞉> 
-:chapter-1-and-2
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/book
-clj꞉getting-clojure.core꞉> 
-Title: Oliver Twist
+Welcome back to Blotts Books!
 nil
 clj꞉getting-clojure.core꞉> 
-Title: Oliver Twist
+Welcome to Botts Books!
 nil
 clj꞉getting-clojure.core꞉> 
-By: Dickens
-nil
+#'getting-clojure.core/shipping-charge
 clj꞉getting-clojure.core꞉> 
-Published: 1838
-nil
+0.0
 clj꞉getting-clojure.core꞉> 
-"Oliver Twist"
+0.0
 clj꞉getting-clojure.core꞉> 
-{:title "Oliver Twist", :author "Dickens", :published 1838, :page-count 362}
-clj꞉getting-clojure.core꞉> 
-{:title "War & Peace", :author "Dickens", :published 1838, :page-count 362}
-clj꞉getting-clojure.core꞉> 
-{:title "Oliver Twist", :author "Dickens"}
-clj꞉getting-clojure.core꞉> 
-{}
-clj꞉getting-clojure.core꞉> 
-{:title "Oliver Twist", :author "Dickens", :published 1838}
-clj꞉getting-clojure.core꞉> 
-[:title :author :published]
-clj꞉getting-clojure.core꞉> 
-[:title :by :published :page-count]
-clj꞉getting-clojure.core꞉> 
-[:title :by :page-count]
-clj꞉getting-clojure.core꞉> 
-(:title :author :published)
-clj꞉getting-clojure.core꞉> 
-{:author "Dickens", :published 1838, :title "Oliver Twist"}
-clj꞉getting-clojure.core꞉> 
-("Oliver Twist" "Dickens" 1838)
-clj꞉getting-clojure.core꞉> 
-{:title "Oliver Twist", :author "Dickens", :published 1838}
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/genres
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/authors
-clj꞉getting-clojure.core꞉> 
-; Syntax error reading source at (REPL:181:32).
-; Duplicate key: Dickens
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-"Austen"
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-:sci-fi
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/more-authors
-clj꞉getting-clojure.core꞉> 
-#{"King" "Dickens" "Clarke" "Austen"}
-clj꞉getting-clojure.core꞉> 
-#{"Dickens" "Clarke" "Austen"}
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-{:title "Oliver Twist", :author "Dickens", :published 1838, "Title" "Pride and Prejudice"}
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-nil
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/anonymous-book
+10.0
 clj꞉getting-clojure.core꞉> 
 true
 clj꞉getting-clojure.core꞉> 
@@ -131,7 +45,7 @@ true
 clj꞉getting-clojure.core꞉> 
 false
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/possible-authors
+true
 clj꞉getting-clojure.core꞉> 
 true
 clj꞉getting-clojure.core꞉> 
@@ -139,9 +53,116 @@ false
 clj꞉getting-clojure.core꞉> 
 true
 clj꞉getting-clojure.core꞉> 
-[:title "Oliver Twist"]
+false
 clj꞉getting-clojure.core꞉> 
-[:author "Dickens"]
+3 is bigger than 1
+nil
 clj꞉getting-clojure.core꞉> 
-3
+1 is lower than 3
+nil
+clj꞉getting-clojure.core꞉> 
+1 is smaller than 3
+nil
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+false
+clj꞉getting-clojure.core꞉> 
+true
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-surcharge?
+clj꞉getting-clojure.core꞉> 
+"I like science fiction"
+clj꞉getting-clojure.core꞉> 
+"I like science fiction"
+clj꞉getting-clojure.core꞉> 
+"I like science fiction"
+clj꞉getting-clojure.core꞉> 
+"I like mysteries!"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+"yes"
+clj꞉getting-clojure.core꞉> 
+An empty vector is true!
+nil
+clj꞉getting-clojure.core꞉> 
+So is a populated vector!
+nil
+clj꞉getting-clojure.core꞉> 
+An empty map is true!
+nil
+clj꞉getting-clojure.core꞉> 
+So is a full map!
+nil
+clj꞉getting-clojure.core꞉> 
+An empty list is true!
+nil
+clj꞉getting-clojure.core꞉> 
+An empty list is true!
+nil
+clj꞉getting-clojure.core꞉> 
+So is a full list!
+nil
+clj꞉getting-clojure.core꞉> 
+This is four expression.
+All grouped together as one
+That prints some stuff and then evaluates to 44
+44
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-charge
+clj꞉getting-clojure.core꞉> 
+Hello returning customer!
+Welcome back to Blotts Books!
+nil
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-charge
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-charge
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-charge
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/shipping-charge
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/customer-greeting
+clj꞉getting-clojure.core꞉> 
+"Welcome, welcome, welcome back!!!"
+clj꞉getting-clojure.core꞉> 
+"Welcome back!"
+clj꞉getting-clojure.core꞉> 
+"Welcome to Blotts Books"
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/publish-book
+clj꞉getting-clojure.core꞉> 
+1984
+clj꞉getting-clojure.core꞉> 
+"Emma"
+clj꞉getting-clojure.core꞉> 
+nil
+clj꞉getting-clojure.core꞉> 
+"ok"
 clj꞉getting-clojure.core꞉> 
