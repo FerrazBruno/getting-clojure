@@ -359,3 +359,85 @@ third-book
 
 ;; CHAPTER 5
 ;; More Capable Functions
+
+;; One Functions, Different Parameters
+(defn greet
+  ([to-whom] (println "Welcome to Blotts Books" to-whom))
+  ([message to-whom] (println message to-whom)))
+(greet "Dolly")
+(greet "Howdy" "Stranger")
+(defn greet
+  ([to-whom] (greet "Welcome to Blotts Books" to-whom))
+  ([message to-whom] (println message to-whom)))
+(greet "Dolly")
+(greet "Howdy" "Stranger")
+
+;; Arguments with Wild Abandon
+(defn print-any-args [& args]
+  (println "My arguments are:" args))
+(print-any-args 7 true nil)
+(defn first-argument [& args]
+  (println (first args)))
+(first-argument 7 true nil)
+(defn new-first-argument [x & args]
+  x)
+(new-first-argument 7 true nil "test")
+
+;; Multimethods
+{:title "War and Peace" :author "Tolstoy"}
+{:book "Emma" :by "Austen"}
+["1984" "Orwell"]
+(defn normalize-book [book]
+  (if (vector? book)
+    {:title (first book) :author (second book)}
+    (if (contains? book :title)
+      book
+      {:title (:book book) :author (:by book)})))
+(normalize-book {:title "War and Peace" :author "Tolstoy"})
+(normalize-book {:book "Emma" :by "Austen"})
+(normalize-book ["1984" "Orwell"])
+(defn dispatch-book-format [book]
+  (cond
+    (vector? book) :vector-book
+    (contains? book :title) :standard-map
+    (contains? book :book) :alternative-map))
+(dispatch-book-format {:title "War and Peace" :author "Tolstoy"})
+(dispatch-book-format {:book "Emma" :by "Austen"})
+(dispatch-book-format ["1984" "Orwell"])
+(defmulti normalize-book dispatch-book-format)
+(defmethod normalize-book :vector-book [book]
+  {:title (first book) :author (second book)})
+(defmethod normalize-book :standard-map [book]
+  book)
+(defmethod normalize-book :alternative-map [book]
+  {:title (:book book) :author (:by book)})
+(normalize-book {:title "War and Peace" :author "Tolstoy"})
+(normalize-book {:book "Emma" :by "Austen"})
+(normalize-book ["1984" "Orwell"])
+(defn dispatch-published [book]
+  (cond
+    (< (:published book) 1928) :public-domain
+    (< (:published book) 1978) :old-copyright
+    :else :new-copyright))
+(defmulti compute-royalties dispatch-published)
+(defmethod compute-royalties :public-domain [book] 0)
+(defmethod compute-royalties :old-copyright [book]
+  ;; Compute royalties based on old copyright law.
+  )
+(defmethod compute-royalties :new-copyright [book]
+  ;; Compute royalties based on new copyright law.
+  )
+(def book [{:title "Pride and Prejudice" :author "Austen" :genre :romance}
+           {:title "World War Z" :author "Brooks" :genre :zombie}])
+(defmulti book-description :genre)
+(defmethod book-description :romance [book]
+  (str "The heart warming new romance by " (:author book)))
+(defmethod book-description :zombie [book]
+  (str "The heart consuming new zombie adventure by " (:author book)))
+(def ppz {:title "Pride and Prejudice and Zombies"
+          :author "Grahame-Smith"
+          :genre :zombie-romance})
+(defmethod book-description :zombie-romance [book]
+  (str "The heart warming and consuming new romance by " (:author book)))
+
+;; Deeply Recursive

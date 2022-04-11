@@ -18,151 +18,98 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/print-greeting
+#'getting-clojure.core/greet
 clj꞉getting-clojure.core꞉> 
-Welcome back to Blotts Books!
+Welcome to Blotts Books Dolly
 nil
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/print-greeting
+"Stranger"
 clj꞉getting-clojure.core꞉> 
-Welcome back to Blotts Books!
+#'getting-clojure.core/greet
+clj꞉getting-clojure.core꞉> 
+Welcome to Blotts Books Dolly
 nil
 clj꞉getting-clojure.core꞉> 
-Welcome to Botts Books!
+Howdy Stranger
 nil
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+#'getting-clojure.core/greet
 clj꞉getting-clojure.core꞉> 
-0.0
-clj꞉getting-clojure.core꞉> 
-0.0
-clj꞉getting-clojure.core꞉> 
-10.0
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-3 is bigger than 1
+Welcome to Blotts Books Dolly
 nil
 clj꞉getting-clojure.core꞉> 
-1 is lower than 3
+Howdy Stranger
 nil
 clj꞉getting-clojure.core꞉> 
-1 is smaller than 3
+#'getting-clojure.core/print-any-args
+clj꞉getting-clojure.core꞉> 
+My arguments are: (7 true nil)
 nil
 clj꞉getting-clojure.core꞉> 
-true
+#'getting-clojure.core/first-argument
 clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-false
-clj꞉getting-clojure.core꞉> 
-true
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-surcharge?
-clj꞉getting-clojure.core꞉> 
-"I like science fiction"
-clj꞉getting-clojure.core꞉> 
-"I like science fiction"
-clj꞉getting-clojure.core꞉> 
-"I like science fiction"
-clj꞉getting-clojure.core꞉> 
-"I like mysteries!"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-"yes"
-clj꞉getting-clojure.core꞉> 
-An empty vector is true!
+7
 nil
 clj꞉getting-clojure.core꞉> 
-So is a populated vector!
-nil
+#'getting-clojure.core/new-first-argument
 clj꞉getting-clojure.core꞉> 
-An empty map is true!
-nil
+7
 clj꞉getting-clojure.core꞉> 
-So is a full map!
-nil
+#'getting-clojure.core/normalize-book
 clj꞉getting-clojure.core꞉> 
-An empty list is true!
-nil
+{:title "War and Peace", :author "Tolstoy"}
 clj꞉getting-clojure.core꞉> 
-An empty list is true!
-nil
+{:title "Emma", :author "Austen"}
 clj꞉getting-clojure.core꞉> 
-So is a full list!
-nil
+{:title "1984", :author "Orwell"}
 clj꞉getting-clojure.core꞉> 
-This is four expression.
-All grouped together as one
-That prints some stuff and then evaluates to 44
-44
+#'getting-clojure.core/dispatch-book-format
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+:standard-map
 clj꞉getting-clojure.core꞉> 
-Hello returning customer!
-Welcome back to Blotts Books!
-nil
+:alternative-map
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+:vector-book
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+#'getting-clojure.core/normalize-book
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+#multifn[normalize-book 0x546582e2]
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/shipping-charge
+#multifn[normalize-book 0x546582e2]
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/customer-greeting
+#multifn[normalize-book 0x546582e2]
 clj꞉getting-clojure.core꞉> 
-"Welcome, welcome, welcome back!!!"
+:standard-map
 clj꞉getting-clojure.core꞉> 
-"Welcome back!"
+:alternative-map
 clj꞉getting-clojure.core꞉> 
-"Welcome to Blotts Books"
+:vector-book
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/publish-book
+{:title "War and Peace", :author "Tolstoy"}
 clj꞉getting-clojure.core꞉> 
-1984
+{:title "Emma", :author "Austen"}
 clj꞉getting-clojure.core꞉> 
-"Emma"
+{:title "1984", :author "Orwell"}
 clj꞉getting-clojure.core꞉> 
-nil
+#'getting-clojure.core/dispatch-published
 clj꞉getting-clojure.core꞉> 
-"ok"
+#'getting-clojure.core/compute-royalties
+clj꞉getting-clojure.core꞉> 
+#multifn[compute-royalties 0x22ac1739]
+clj꞉getting-clojure.core꞉> 
+#multifn[compute-royalties 0x22ac1739]
+clj꞉getting-clojure.core꞉> 
+#multifn[compute-royalties 0x22ac1739]
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/book
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/book-description
+clj꞉getting-clojure.core꞉> 
+#multifn[book-description 0x6b331c46]
+clj꞉getting-clojure.core꞉> 
+#multifn[book-description 0x6b331c46]
+clj꞉getting-clojure.core꞉> 
+#'getting-clojure.core/ppz
+clj꞉getting-clojure.core꞉> 
+#multifn[book-description 0x6b331c46]
 clj꞉getting-clojure.core꞉> 
