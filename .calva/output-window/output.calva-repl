@@ -18,98 +18,50 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/greet
+#'getting-clojure.core/book
 clj꞉getting-clojure.core꞉> 
-Welcome to Blotts Books Dolly
-nil
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-"Stranger"
+9000000
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/greet
+()
 clj꞉getting-clojure.core꞉> 
-Welcome to Blotts Books Dolly
-nil
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-Howdy Stranger
-nil
+9000000
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/greet
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-Welcome to Blotts Books Dolly
-nil
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉getting-clojure.core꞉> 
-Howdy Stranger
-nil
+; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/print-any-args
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-My arguments are: (7 true nil)
-nil
+; Execution error (NullPointerException) at getting-clojure.core/sum-copies (form-init6797452072329519022.clj:473).
+; null
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/first-argument
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-7
-nil
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/new-first-argument
-clj꞉getting-clojure.core꞉> 
-7
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/normalize-book
-clj꞉getting-clojure.core꞉> 
-{:title "War and Peace", :author "Tolstoy"}
-clj꞉getting-clojure.core꞉> 
-{:title "Emma", :author "Austen"}
-clj꞉getting-clojure.core꞉> 
-{:title "1984", :author "Orwell"}
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/dispatch-book-format
-clj꞉getting-clojure.core꞉> 
-:standard-map
-clj꞉getting-clojure.core꞉> 
-:alternative-map
-clj꞉getting-clojure.core꞉> 
-:vector-book
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/normalize-book
-clj꞉getting-clojure.core꞉> 
-#multifn[normalize-book 0x546582e2]
-clj꞉getting-clojure.core꞉> 
-#multifn[normalize-book 0x546582e2]
-clj꞉getting-clojure.core꞉> 
-#multifn[normalize-book 0x546582e2]
-clj꞉getting-clojure.core꞉> 
-:standard-map
-clj꞉getting-clojure.core꞉> 
-:alternative-map
-clj꞉getting-clojure.core꞉> 
-:vector-book
-clj꞉getting-clojure.core꞉> 
-{:title "War and Peace", :author "Tolstoy"}
-clj꞉getting-clojure.core꞉> 
-{:title "Emma", :author "Austen"}
-clj꞉getting-clojure.core꞉> 
-{:title "1984", :author "Orwell"}
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/dispatch-published
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/compute-royalties
-clj꞉getting-clojure.core꞉> 
-#multifn[compute-royalties 0x22ac1739]
-clj꞉getting-clojure.core꞉> 
-#multifn[compute-royalties 0x22ac1739]
-clj꞉getting-clojure.core꞉> 
-#multifn[compute-royalties 0x22ac1739]
+; Execution error (NullPointerException) at getting-clojure.core/sum-copies (form-init6797452072329519022.clj:473).
+; null
 clj꞉getting-clojure.core꞉> 
 #'getting-clojure.core/book
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/book-description
+9000000
 clj꞉getting-clojure.core꞉> 
-#multifn[book-description 0x6b331c46]
+#'getting-clojure.core/sum-copies
 clj꞉getting-clojure.core꞉> 
-#multifn[book-description 0x6b331c46]
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/ppz
-clj꞉getting-clojure.core꞉> 
-#multifn[book-description 0x6b331c46]
+9000000
 clj꞉getting-clojure.core꞉> 

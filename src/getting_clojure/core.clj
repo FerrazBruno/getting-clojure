@@ -278,7 +278,7 @@ third-book
   (println "An empty map is true!"))
 (if {:title "Make Room! Make Room!"}
   (println "So is a full map!"))
-(if () 
+(if ()
   (println "An empty list is true!"))
 (if '(:full :list)
   (println "So is a full list!"))
@@ -331,7 +331,7 @@ third-book
   (case status
     :gold      "Welcome, welcome, welcome back!!!"
     :preferred "Welcome back!"
-               "Welcome to Blotts Books"))
+    "Welcome to Blotts Books"))
 (customer-greeting :gold)
 (customer-greeting :preferred)
 (customer-greeting :another-thing)
@@ -344,7 +344,7 @@ third-book
 (defn publish-book [book]
   (when (not (:title book))
     (throw
-      (ex-info "A book needs a title!" {:book book}))))
+     (ex-info "A book needs a title!" {:book book}))))
 
 ;; In the Wild
 ;; Staying Out of Trouble
@@ -441,3 +441,40 @@ third-book
   (str "The heart warming and consuming new romance by " (:author book)))
 
 ;; Deeply Recursive
+(def book
+  [{:title "Jaws" :copies-sold 2000000}
+   {:title "Emma" :copies-sold 3000000}
+   {:title "2001" :copies-sold 4000000}])
+;; (defn sum-copies
+;;   ([books] (sum-copies book 0))
+;;   ([books total]
+;;    (if (empty? books)
+;;      total
+;;      (sum-copies
+;;       (rest books)
+;;       (+ total (:copies-sold (first books)))))))
+;; (sum-copies book)
+;; (defn sum-copies
+;;   ([books] (sum-copies book 0))
+;;   ([books total]
+;;    (if (empty? books)
+;;      total
+;;      (recur
+;;       (rest books)
+;;       (+ total (:copies-sold (first books)))))))
+;; (sum-copies book)
+;; (defn sum-copies [books]
+;;   (loop [books books
+;;          total 0]
+;;     (if (empty? books)
+;;       total
+;;       (recur
+;;        (rest books)
+;;        (+ total (:copies-sold (first books)))))))
+;; (sum-copies book)
+(defn sum-copies [books]
+  (apply + (map :copies-sold books)))
+(sum-copies book)
+
+;; Docstrings
+
