@@ -477,4 +477,75 @@ third-book
 (sum-copies book)
 
 ;; Docstrings
+;; Return the average of the two parameters
+(defn average [a b]
+  (/ (+ a b) 2))
+(average 10 2)
+(defn average [a b]
+  "Return the average of a and b."
+  (/ (+ a b) 2))
+(defn multi-average
+  "Return the average of 2 or 3 numbers."
+  ([a b]
+   (/ (+ a b) 2.0))
+  ([a b c]
+   (/ (+ a b c) 3.0)))
 
+;; Pre and Post Conditions
+;; (defn publish-book [book]
+;;   (when-not (contains? book :title)
+;;     (throw (ex-info "Books must contain :title" {:book book})))
+;;   (print-book book)
+;;   (ship-book book))
+;; (defn publish-book [book]
+;;   {:pre [(:title book)]}
+;;   (print-book book)
+;;   (ship-book book))
+;; (defn publish-book [book]
+;;   {:pre [(:title book)
+;;          (:author book)]}
+;;   (print-book book)
+;;   (ship-book book))
+;; (defn publish-book [book]
+;;   {:pre [(:title book)]
+;;    :post [(boolean? %)]}
+;;   (print-book book)
+;;   (ship-book book))
+
+;; Staying Out of Trouble
+(defn one-two-or-more
+  ([a] (println "One arg:" a))
+  ([a b] (println "Two args:" a b))
+  ([a b & more] (println "More than two:" a b more)))
+;; Oh no!
+;; (defn one-two-or-more
+;;   ([a] (println "One arg:" a))
+;;   ([a b] (println "Two args:" a b))
+;;   ([& more] (println "More than two:" more)))
+(defn chatty-average
+  ([a b]
+   (println "chatty-average function called with 2 arguments")
+   (println "** first argument:" a)
+   (println "** second argument:" b)
+   (/ (+ a b) 2.0)))
+(chatty-average 4 2)
+(defn chatty-multi-average
+  ([a b]
+   (println "chatty-average functions called with 2 arguments")
+   (/ (+ a b) 2.0))
+  ([a b c]
+   (println "chatty-average functions called with 3 arguments")
+   (/ (+ a b c) 3.0)))
+(defn print-any-args [& args]
+  (println "Many arguments are:" args))
+(print-any-args 1 2 3 4)
+;; not compile
+;; (defn print-any-args [&args]
+;;   (println "Many arguments are:" args))
+
+;; In The Wild
+;; Wrapping Up
+
+
+;; CHAPTER 6
+;; Functional Things

@@ -18,50 +18,37 @@
 clj꞉getting-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/book
+#'getting-clojure.core/average
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
+15/2
 clj꞉getting-clojure.core꞉> 
-9000000
+6
 clj꞉getting-clojure.core꞉> 
-()
+#'getting-clojure.core/average
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
+#'getting-clojure.core/multi-average
 clj꞉getting-clojure.core꞉> 
-9000000
+#'getting-clojure.core/multi-average
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
+#'getting-clojure.core/one-two-or-more
 clj꞉getting-clojure.core꞉> 
-; nREPL Connection was closed
-; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
-; Hooking up nREPL sessions...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
+#'getting-clojure.core/chatty-average
 clj꞉getting-clojure.core꞉> 
-; Jack-in done.
+chatty-average function called with 2 arguments
+** first argument: 4
+** second argument: 2
+3.0
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
+#'getting-clojure.core/chatty-multi-average
 clj꞉getting-clojure.core꞉> 
-; Execution error (NullPointerException) at getting-clojure.core/sum-copies (form-init6797452072329519022.clj:473).
-; null
+#'getting-clojure.core/print-any-args
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
+Many arguments are: (1 2 3 4)
+nil
 clj꞉getting-clojure.core꞉> 
-; Execution error (NullPointerException) at getting-clojure.core/sum-copies (form-init6797452072329519022.clj:473).
-; null
+true
 clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/book
+true
 clj꞉getting-clojure.core꞉> 
-9000000
-clj꞉getting-clojure.core꞉> 
-#'getting-clojure.core/sum-copies
-clj꞉getting-clojure.core꞉> 
-9000000
+true
 clj꞉getting-clojure.core꞉> 
